@@ -3,6 +3,7 @@
 <head>
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>
 window.onload = function() {
 
@@ -241,22 +242,37 @@ constituentDChart.render();
   <!-- Constituent A -->
   <div id="constituent-a-example" class="example">
     <div class="chart" id="mpdCurrentA" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>  
-    <div id="constituentAChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div> 
+    <div id="constituentAChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+    <ul class="nav-links">
+      <li class="link"><a href="#constituent-b-example">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+    </ul>
   </div>
   <!-- Constituent B -->  
   <div id="constituent-b-example" class="example">
     <div class="chart" id="mpdCurrentB" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>  
-    <div id="constituentBChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div> 
+    <div id="constituentBChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+    <ul class="nav-links">
+      <li class="link"><a href="#constituent-a-example"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a></li>
+      <li class="link"><a href="#constituent-c-example">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+    </ul>
   </div>
   <!-- Constituent C -->  
   <div id="constituent-c-example" class="example">
     <div class="chart" id="mpdCurrentC" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>  
-    <div id="constituentCChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div> 
+    <div id="constituentCChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+    <ul class="nav-links">
+      <li class="link"><a href="#constituent-b-example"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a></li>
+      <li class="link"><a href="#constituent-d-example">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+    </ul>
   </div>    
   <!-- Constituent D -->  
   <div id="constituent-d-example" class="example">
     <div class="chart" id="mpdCurrentD" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>  
-    <div id="constituentDChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div> 
+    <div id="constituentDChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+    <ul class="nav-links">
+      <li class="link"><a href="#constituent-c-example"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a></li>
+      <li class="link"><a href="#constituent-a-example">Top <i class="fa fa-chevron-up" aria-hidden="true"></i></a></li>
+    </ul>
   </div>  
 <script src="CanvasChart/canvasjs.min.js"></script>
 <script src="CanvasChart/jquery.canvasjs.min.js"></script>
