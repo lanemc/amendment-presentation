@@ -1,7 +1,13 @@
-#mpdCurrent {
-  margin-bottom: 30px !important;
-}
-
+/* hide download button */
 button {
   display: none !important; 
+}
+
+.example {
+  margin: 0 auto 200px !important;
+  padding-top: 50px;
+}
+
+.constituent-chart {
+  margin-top: 25px !important;
 }

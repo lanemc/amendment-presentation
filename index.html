@@ -34,7 +34,10 @@ window.onload = function() {
 // });
 // chart.render();
 
-const mpdCurrentChart = new CanvasJS.Chart("mpdCurrent", {
+///////// example - Constituent A /////////
+
+// MPD current chart A
+const mpdCurrentChartA = new CanvasJS.Chart("mpdCurrentA", {
 	theme: "light2", // "light1", "light2", "dark1", "dark2"
 	exportEnabled: true,
 	animationEnabled: true,
@@ -54,9 +57,8 @@ const mpdCurrentChart = new CanvasJS.Chart("mpdCurrent", {
 		]
 	}]
 });
-mpdCurrentChart.render()
+mpdCurrentChartA.render()
 
-// example - Constituent A
 const constituentAChart = new CanvasJS.Chart("constituentAChart", {
 	theme: "light2", // "light1", "light2", "dark1", "dark2"
 	exportEnabled: true,
@@ -82,13 +84,180 @@ const constituentAChart = new CanvasJS.Chart("constituentAChart", {
 });
 constituentAChart.render();
 
+///////// example - Constituent B /////////
+
+// MPD current chart B
+const mpdCurrentChartB = new CanvasJS.Chart("mpdCurrentB", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "MPD Current Budget - $193 Million"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+			{ y: 100, label: "MPD Enforcement Activities" },
+		]
+	}]
+});
+mpdCurrentChartB.render()
+
+const constituentBChart = new CanvasJS.Chart("constituentBChart", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "Focus on Community-Based Solutions"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+      { y: 0, label: "Division of Law Enforcement" },
+			{ y: 40, label: "Unarmed Peace Officers" },      
+			{ y: 40, label: "Community-based safety solutions" },
+			{ y: 20, label: "Economic Justice" },
+		]
+	}]
+});
+constituentBChart.render();
+
+///////// example - Constituent C /////////
+
+// MPD current chart C
+const mpdCurrentChartC = new CanvasJS.Chart("mpdCurrentC", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "MPD Current Budget - $193 Million"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+			{ y: 100, label: "MPD Enforcement Activities" },
+		]
+	}]
+});
+mpdCurrentChartC.render()
+
+const constituentCChart = new CanvasJS.Chart("constituentCChart", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "Focus on Oversight and Accountability"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+      { y: 65, label: "Division of Law Enforcement" },
+			{ y: 10, label: "Law Enforcement Oversight" },      
+			{ y: 15, label: "Community-based Safety Solutions" },
+			{ y: 10, label: "Outreach, Comms, Analytics" },
+		]
+	}]
+});
+constituentCChart.render();
+
+///////// example - Constituent D /////////
+
+// MPD current chart D
+const mpdCurrentChartD = new CanvasJS.Chart("mpdCurrentD", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "MPD Current Budget - $193 Million"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+			{ y: 100, label: "MPD Enforcement Activities" },
+		]
+	}]
+});
+mpdCurrentChartD.render()
+
+const constituentDChart = new CanvasJS.Chart("constituentDChart", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "Focus on Community Investment"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+      { y: 15, label: "Division of Law Enforcement" },
+			{ y: 30, label: "Neighborhood Organizations" },      
+			{ y: 40, label: "Community-based Safety Solutions" },
+			{ y: 15, label: "Local Clinic Support" },
+		]
+	}]
+});
+constituentDChart.render();
+
 }
 </script>
 </head>
 <body>
-  <div class="chart" id="mpdCurrent" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>  
-  <div class="chart" id="constituentAChart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div> 
-
+  <!-- Constituent A -->
+  <div id="constituent-a-example" class="example">
+    <div class="chart" id="mpdCurrentA" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>  
+    <div id="constituentAChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div> 
+  </div>
+  <!-- Constituent B -->  
+  <div id="constituent-b-example" class="example">
+    <div class="chart" id="mpdCurrentB" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>  
+    <div id="constituentBChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div> 
+  </div>
+  <!-- Constituent C -->  
+  <div id="constituent-c-example" class="example">
+    <div class="chart" id="mpdCurrentC" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>  
+    <div id="constituentCChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div> 
+  </div>    
+  <!-- Constituent D -->  
+  <div id="constituent-d-example" class="example">
+    <div class="chart" id="mpdCurrentD" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>  
+    <div id="constituentDChart" class="chart constituent-chart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div> 
+  </div>  
 <script src="CanvasChart/canvasjs.min.js"></script>
 <script src="CanvasChart/jquery.canvasjs.min.js"></script>
 </body>
