@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function() {
+
+// var chart = new CanvasJS.Chart("chartContainer", {
+// 	theme: "light2", // "light1", "light2", "dark1", "dark2"
+// 	exportEnabled: true,
+// 	animationEnabled: true,
+// 	title: {
+// 		text: "Desktop Browser Market Share in 2016"
+// 	},
+// 	data: [{
+// 		type: "pie",
+// 		startAngle: 25,
+// 		toolTipContent: "<b>{label}</b>: {y}%",
+// 		showInLegend: "true",
+// 		legendText: "{label}",
+// 		indexLabelFontSize: 16,
+// 		indexLabel: "{label} - {y}%",
+// 		dataPoints: [
+// 			{ y: 51.08, label: "Chrome" },
+// 			{ y: 27.34, label: "Internet Explorer" },
+// 			{ y: 10.62, label: "Firefox" },
+// 			{ y: 5.02, label: "Microsoft Edge" },
+// 			{ y: 4.07, label: "Safari" },
+// 			{ y: 1.22, label: "Opera" },
+// 			{ y: 0.44, label: "Others" }
+// 		]
+// 	}]
+// });
+// chart.render();
+
+const mpdCurrentChart = new CanvasJS.Chart("mpdCurrent", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "MPD Current Budget - $193 Million"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+			{ y: 100, label: "MPD Enforcement Activities" },
+		]
+	}]
+});
+mpdCurrentChart.render()
+
+// example - Constituent A
+const constituentAChart = new CanvasJS.Chart("constituentAChart", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "Focus on Mental Health and Victim Support"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+      { y: 30, label: "Division of Law Enforcement" },
+			{ y: 30, label: "Unarmed Peace Officers" },      
+			{ y: 20, label: "Victim Support" },
+			{ y: 20, label: "Mental Health" },
+		]
+	}]
+});
+constituentAChart.render();
+
+}
+</script>
+</head>
+<body>
+  <div id="mpdCurrent" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>  
+  <div id="constituentAChart" style="height: 370px; max-width: 920px; margin: 0px auto;"></div> 
+
+<script src="CanvasChart/canvasjs.min.js"></script>
+<script src="CanvasChart/jquery.canvasjs.min.js"></script>
+</body>
+</html>
